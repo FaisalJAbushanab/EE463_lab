@@ -1,0 +1,13 @@
+python3 scheduler.py -p FIFO -l 97,62,31,8
+$ python3 scheduler.py -p SJF -l 97,62,31,8
+$ python3 scheduler.py -p RR -l 97,62,31,8 -q 50
+$ python3 scheduler.py -p RR -l 97,62,31,8 -q 25
+
+
+0		25		50		75	83	108	133	139	164	176	198		125		150		175		200		225		250		275
+j0		j1		j2		j3	j0	j1	j2	j0	j1	j0
+25		25		25		8	50	50	31	75	62	97	
+
+0		50		100		131		139		186		198
+j0		j1		j2		j3		j0		j1		
+50		50		31		8		97		62
